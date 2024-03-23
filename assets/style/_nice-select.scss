@@ -1,0 +1,46 @@
+.nice-select {
+  min-height: 42px;
+  padding: 12px 22px;
+  display: block;
+  width: 100%;
+
+  font-family: $AvenirNext;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  color: #605866;
+  border: 1px solid #e4e3e3;
+  box-shadow: 0px 4px 8px rgba(28, 37, 44, 0.08);
+  border-radius: 20px;
+
+  .list {
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 13.44px 22.08px rgba(28, 37, 44, 0.08);
+    border-radius: 19.2px;
+    margin-top: 4px;
+    top: 100%;
+    left: 0;
+    max-height: 184px;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .option {
+    font-family: $AvenirNext;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1;
+    color: #605866;
+    min-height: auto;
+    padding: 9px 40px;
+    &:hover,
+    &.focus,
+    &.selected.focus {
+      background-color: #e3eaff;
+    }
+  }
+}

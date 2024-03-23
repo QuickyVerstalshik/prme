@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ</title>
+    <link rel="stylesheet" href="./assets/style/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/custom-select/css/nice-select.css" />
+    <link rel="stylesheet" href="./assets/style/style.css" />
+  </head>
+  <body>
+    <div class="wrapper-all page page-faq">
+      <header class="header fixed-top" id="header">
+        <nav class="navbar navbar-expand-xl navbar-light">
+          <div class="container">
+            <a class="navbar-brand header__logo" href="#">
+              <img src="./assets/img/logo-header.svg" alt="" />
+            </a>
+            <button
+              class="d-xl-none header__toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              href="#offcanvasNavMenu"
+              role="button"
+              aria-controls="offcanvasNavMenu"
+            >
+              <img src="./assets/img/icons/menu.png" alt="" />
+            </button>
+            <div
+              class="d-none d-xl-flex justify-content-start align-items-center"
+            >
+              <ul class="navbar-nav flex-shrink-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Main page</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">STORE</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Examples/ INDUSTRIES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Help from AI</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">PR Agency</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">CONTACT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">FAQ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Login</a>
+                </li>
+              </ul>
+              <a href="#" class="btn btn-sign-up">
+                Sign up
+              </a>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div
+        class="offcanvas offcanvas-end d-xl-none"
+        tabindex="-1"
+        id="offcanvasNavMenu"
+      >
+        <div class="offcanvas-header pb-0">
+          <a href="/" class="header__logo">
+            <img src="./assets/img/logo-header.svg" alt="" />
+          </a>
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body navbar-light">
+          <ul class="navbar-nav mb-3">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Main page</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">STORE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Examples/ INDUSTRIES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Help from AI</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">PR Agency</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTACT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">FAQ</a>
+            </li>
+          </ul>
+          <a href="#" class="btn btn-sign-up">
+            Sign up
+          </a>
+        </div>
+      </div>
+      <!-- END header -->
+
+      <main class="main">
+        <div class="container">
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#modalSignUp"
+          >
+            Sign up
+          </button>
+          <hr />
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#modalWelBack"
+          >
+            Welcome back
+          </button>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-content__logo">
+              <img
+                src="./assets/img/logo-footer.svg"
+                class="footer-content__logo_image"
+                alt=""
+              />
+            </div>
+            <div class="footer-content__links">
+              <a href="#" class="footer-content__links_link">
+                Main page
+              </a>
+              <a href="#" class="footer-content__links_link">
+                Store
+              </a>
+              <a href="#" class="footer-content__links_link">
+                Services
+              </a>
+              <a href="#" class="footer-content__links_link">
+                Who we are
+              </a>
+              <a href="#" class="footer-content__links_link">
+                Industries
+              </a>
+              <a href="#" class="footer-content__links_link">
+                Contact
+              </a>
+              <a href="#" class="footer-content__links_link">
+                FAQ
+              </a>
+            </div>
+            <div class="footer-content__action">
+              <a href="#" class="footer-content__action_login">
+                Login
+              </a>
+              <a
+                href="#"
+                class="btn btn-sign-up footer-content__action_sign-up"
+              >
+                Sign up
+              </a>
+            </div>
+          </div>
+          <div class="footer__copy">
+            <div class="footer__copy_year">
+              © 2023
+            </div>
+            <div class="footer__copy_links">
+              <a href="#" class="footer__copy_link">
+                Terms & Conditions
+              </a>
+              <span>|</span>
+              <a href="#" class="footer__copy_link">
+                Privacy Policy
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- Modal sign-up -->
+      <div
+        class="modal fade modal-sign-up"
+        id="modalSignUp"
+        tabindex="-1"
+        aria-labelledby="modalSignUpLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button
+                type="button"
+                class="btn-close position-absolute top-0 end-0 m-3"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+              <div class="modal__form-content">
+                <h5 class="modal-title" id="modalSignUpLabel">
+                  Sign up
+                </h5>
+                <div class="custom-form">
+                  <div class="custom-form__item">
+                    <input
+                      type="text"
+                      class="custom-form__input"
+                      placeholder="Full Name"
+                    />
+                  </div>
+                  <div class="custom-form__item">
+                    <input
+                      type="email"
+                      class="custom-form__input"
+                      placeholder="Email"
+                    />
+                  </div>
+                  <div class="custom-form__item">
+                    <input
+                      type="tel"
+                      class="custom-form__input"
+                      placeholder="Phone"
+                    />
+                  </div>
+                  <div class="custom-form__item">
+                    <input
+                      type="text"
+                      class="custom-form__input"
+                      placeholder="Company"
+                    />
+                  </div>
+                  <div class="custom-form__item">
+                    <input
+                      type="text"
+                      class="custom-form__input"
+                      placeholder="Web site"
+                    />
+                  </div>
+                  <div class="custom-form__item">
+                    <input
+                      type="password"
+                      class="custom-form__input"
+                      placeholder="Password"
+                    />
+                  </div>
+                  <div class="custom-form__item custom-form__item_last-child">
+                    <input
+                      type="password"
+                      class="custom-form__input"
+                      placeholder="Confirm Password"
+                    />
+                  </div>
+                  <div class="d-flex align-items-center justify-content-center">
+                    <button class="btn btn-primary">
+                      <span>
+                        SignUp
+                      </span>
+                      <img
+                        src="./assets/img/icons/arrow-white-right.svg"
+                        alt=""
+                      />
+                    </button>
+                  </div>
+                  <div class="modal__body-bottom">
+                    <div class="modal__body-bottom_text">
+                      Already a member?
+                      <a href="#" class="modal__body-bottom_link">
+                        Login
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal welcome back -->
+      <div
+        class="modal fade modal-wel-back"
+        id="modalWelBack"
+        tabindex="-1"
+        aria-labelledby="modalWelBackLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button
+                type="button"
+                class="btn-close position-absolute top-0 end-0 m-3"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+              <div class="modal__form-content">
+                <h5 class="modal-title" id="modalWelBackLabel">
+                  Welcome back!
+                </h5>
+                <p class="modal-desc">
+                  Kindly fill in your login details to proceed
+                </p>
+                <div class="custom-form">
+                  <div class="custom-form__item">
+                    <input
+                      type="email"
+                      class="custom-form__input"
+                      placeholder="Email"
+                    />
+                  </div>
+                  <div class="custom-form__item custom-form__item_last-child">
+                    <input
+                      type="password"
+                      class="custom-form__input"
+                      placeholder="Password"
+                    />
+                    <a href="#" class="pass-forgot">
+                      i forgot my password?
+                    </a>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-center">
+                    <button class="btn btn-primary">
+                      <span>
+                        Login
+                      </span>
+                      <img
+                        src="./assets/img/icons/arrow-white-right.svg"
+                        alt=""
+                      />
+                    </button>
+                  </div>
+                  <div class="modal__body-bottom">
+                    <div class="modal__body-bottom_text">
+                      Don’t have an account yet? 
+                      <a href="#" class="modal__body-bottom_link">
+                        Sign Up
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end wrapper-all -->
+
+    <script
+      src="https://code.jquery.com/jquery-2.2.0.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="./assets/slick/slick.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <script src="./assets/custom-select/js/jquery.nice-select.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+  </body>
+</html>

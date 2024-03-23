@@ -1,0 +1,320 @@
+.page-ai {
+  background-image: url(../img/store/bg-store-lg.png);
+  @media screen and (min-width: 992px) {
+    background-image: url(../img/store/bg-store.png);
+  }
+}
+
+.main-page-ai {
+  padding-top: calc(80px + (110 - 80) * ((100vw - 320px) / (1920 - 320)));
+  padding-bottom: calc(80px + (170 - 80) * ((100vw - 320px) / (1920 - 320)));
+  @media screen and (min-width: 1920px) {
+    padding-top: 110px;
+    padding-bottom: 170px;
+  }
+
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.ai-first-screen {
+  margin-bottom: calc(60px + (120 - 60) * ((100vw - 320px) / (1920 - 320)));
+  @media screen and (min-width: 1920px) {
+    margin-bottom: 120px;
+  }
+
+  &__title {
+    font-weight: 500;
+    line-height: 1;
+    font-size: calc(30px + (64 - 30) * ((100vw - 320px) / (1920 - 320)));
+    margin-bottom: 16px;
+    @media screen and (min-width: 1920px) {
+      font-size: 64px;
+    }
+  }
+
+  &__desc {
+    font-weight: 500;
+    line-height: 1;
+    color: #8b8b8b;
+    font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1920 - 320)));
+    @media screen and (min-width: 1920px) {
+      font-size: 20px;
+    }
+  }
+
+  &__img-wrap {
+    max-width: 576px;
+    margin: 0 auto;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.ai-help {
+  position: relative;
+  padding-bottom: calc(60px + (120 - 60) * ((100vw - 320px) / (1920 - 320)));
+  @media screen and (min-width: 1920px) {
+    padding-bottom: 120px;
+  }
+
+  &__ellipse {
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0px 0px 127px rgba(0, 0, 0, 0.06),
+    inset 0px 0px 46px rgba(0, 0, 0, 0.16);
+    display: block;
+    width: 100%;
+    bottom: 20%;
+    left: calc(-140px + (-320 - (-140)) * ((100vw - 320px) / (1920 - 320)));
+    max-width: calc(240px + (576 - 240) * ((100vw - 320px) / (1920 - 320)));
+    @media screen and (max-width: 1199px) {
+      bottom: 0;
+    }
+    @media screen and (min-width: 1920px) {
+      max-width: 576px;
+      left: -320px;
+    }
+  }
+
+  &__header {
+    margin-bottom: calc(32px + (70 - 32) * ((100vw - 320px) / (1920 - 320)));
+    @media screen and (min-width: 1920px) {
+      margin-bottom: 70px;
+    }
+
+    &_title {
+      font-weight: 300;
+      line-height: 1;
+      text-align: center;
+      font-size: calc(20px + (25 - 20) * ((100vw - 320px) / (1920 - 320)));
+      margin-bottom: calc(24px + (60 - 24) * ((100vw - 320px) / (1920 - 320)));
+      @media screen and (min-width: 1920px) {
+        font-size: 25px;
+        margin-bottom: 60px;
+      }
+    }
+
+    &_desc {
+    }
+  }
+
+  &__desc {
+    font-weight: 500;
+    line-height: 1.5;
+    color: #444444;
+    font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1920 - 320)));
+    margin-bottom: 0;
+    @media screen and (min-width: 1920px) {
+      font-size: 20px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: calc(40px + (50 - 40) * ((100vw - 320px) / (1920 - 320)));
+    margin-bottom: calc(32px + (70 - 32) * ((100vw - 320px) / (1920 - 320)));
+    @media screen and (min-width: 1920px) {
+      gap: 50px;
+      margin-bottom: 70px;
+    }
+  }
+
+  &__item {
+    background: #ffffff;
+    box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.05);
+    border-radius: calc(24px + (41 - 24) * ((100vw - 320px) / (1920 - 320)));
+    padding-left: calc(12px + (40 - 12) * ((100vw - 320px) / (1920 - 320)));
+    padding-right: calc(12px + (40 - 12) * ((100vw - 320px) / (1920 - 320)));
+    padding-bottom: calc(12px + (30 - 12) * ((100vw - 320px) / (1920 - 320)));
+
+    @media screen and (min-width: 1920px) {
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-bottom: 30px;
+      border-radius: 41px;
+    }
+
+    &_number {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #637de9;
+      border-radius: 50%;
+      font-weight: 900;
+      line-height: 0.75;
+      color: #ffffff;
+      font-size: calc(28px + (40 - 28) * ((100vw - 320px) / (1920 - 320)));
+      width: calc(60px + (85 - 60) * ((100vw - 320px) / (1920 - 320)));
+      height: calc(60px + (85 - 60) * ((100vw - 320px) / (1920 - 320)));
+      margin-top: calc(
+              -20px + (-32 - (-20)) * ((100vw - 320px) / (1920 - 320))
+      );
+      margin-bottom: calc(12px + (20 - 12) * ((100vw - 320px) / (1920 - 320)));
+      @media screen and (min-width: 1920px) {
+        margin-top: -32px;
+        margin-bottom: 20px;
+        width: 85px;
+        height: 85px;
+        font-size: 40px;
+      }
+    }
+
+    &_desc {
+    }
+  }
+
+  &__bottom {
+    &_desc {
+    }
+  }
+}
+
+.gpt-chat {
+  position: relative;
+  margin-bottom: calc(80px + (170 - 80) * ((100vw - 320px) / (1920 - 320)));
+  @media screen and (min-width: 1920px) {
+    margin-bottom: 170px;
+  }
+
+  &__ellipse {
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0px 0px 127px rgba(0, 0, 0, 0.06),
+    inset 0px 0px 46px rgba(0, 0, 0, 0.16);
+    display: block;
+    width: 100%;
+    bottom: 25%;
+    right: calc(-120px + (-240 - (-120)) * ((100vw - 320px) / (1920 - 320)));
+    max-width: calc(240px + (576 - 240) * ((100vw - 320px) / (1920 - 320)));
+    @media screen and (max-width: 1199px) {
+      bottom: 0;
+    }
+    @media screen and (min-width: 1920px) {
+      max-width: 576px;
+      right: -240px;
+    }
+  }
+
+  &__body {
+    max-width: 910px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-weight: 300;
+    line-height: 1;
+    text-align: center;
+    font-size: calc(20px + (25 - 20) * ((100vw - 320px) / (1920 - 320)));
+    margin-bottom: calc(24px + (52 - 24) * ((100vw - 320px) / (1920 - 320)));
+    @media screen and (min-width: 1920px) {
+      font-size: 25px;
+      margin-bottom: 52px;
+    }
+  }
+
+  &__form {
+    margin-bottom: calc(40px + (90 - 40) * ((100vw - 320px) / (1920 - 320)));
+    @media screen and (min-width: 1920px) {
+      margin-bottom: 90px;
+    }
+
+    &_input-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: calc(20px + (36 - 20) * ((100vw - 320px) / (1920 - 320)));
+      @media screen and (max-width: 575px) {
+        flex-direction: column;
+        gap: 20px;
+      }
+      @media screen and (min-width: 1920px) {
+        margin-bottom: 36px;
+      }
+    }
+
+    &_inlet {
+      display: block;
+      width: 100%;
+      background: #ffffff;
+      border: 1px solid #ededed;
+      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.11);
+      font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+      @media screen and (min-width: 1920px) {
+        font-size: 16px;
+      };
+    }
+
+    &_input {
+      border-radius: 240px;
+      padding: 14px 20px;
+    }
+
+    &_submit {
+      @media screen and (min-width: 576px) {
+        margin-left: -40px;
+      }
+    }
+
+    &_textarea-wrap {
+    }
+
+    &_textarea {
+      padding: 20px;
+      border-radius: 38px;
+    }
+  }
+
+  &__ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__li {
+    position: relative;
+    padding-left: calc(16px + (20 - 16) * ((100vw - 320px) / (1920 - 320)));
+    font-weight: 500;
+    line-height: 1.5;
+    color: #444444;
+    font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1920 - 320)));
+    @media screen and (min-width: 1920px) {
+      padding-left: 20px;
+      font-size: 20px;
+    }
+
+    &::after {
+      position: absolute;
+      content: '•';
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 100%;
+    }
+  }
+}
+
+.ai-contact-us {
+  position: relative;
+
+  &__ellipse {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 0;
+    left: calc(12px + (80 - 12) * ((100vw - 320px) / (1920 - 320)));
+    max-width: calc(120px + (312 - 120) * ((100vw - 320px) / (1920 - 320)));
+    @media screen and (min-width: 1920px) {
+      left: 80px;
+      max-width: 312px;
+    }
+    box-shadow: 0px 0px 127px rgba(0, 0, 0, 0.06),
+    inset 0px 0px 46px rgba(0, 0, 0, 0.16);
+    border-radius: 50%;
+  }
+}

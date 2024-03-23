@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STORE</title>
+    <link rel="stylesheet" href="./assets/style/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/custom-select/css/nice-select.css" />
+    <link rel="stylesheet" href="./assets/style/style.css" />
+  </head>
+  <body>
+    <div class="wrapper-all page page-store">
+      <header class="header fixed-top" id="header">
+        <nav class="navbar navbar-expand-xl navbar-light">
+          <div class="container">
+            <a class="navbar-brand header__logo" href="#">
+              <img src="./assets/img/logo-header.svg" alt="" />
+            </a>
+            <button
+              class="d-xl-none header__toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              href="#offcanvasNavMenu"
+              role="button"
+              aria-controls="offcanvasNavMenu"
+            >
+              <img src="./assets/img/icons/menu.png" alt="" />
+            </button>
+            <div
+              class="d-none d-xl-flex justify-content-start align-items-center"
+            >
+              <ul class="navbar-nav flex-shrink-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Main page</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">STORE</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Examples/ INDUSTRIES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Help from AI</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">PR Agency</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">CONTACT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">FAQ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Login</a>
+                </li>
+              </ul>
+              <a href="#" class="btn btn-sign-up">
+                Sign up
+              </a>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div
+        class="offcanvas offcanvas-end d-xl-none"
+        tabindex="-1"
+        id="offcanvasNavMenu"
+      >
+        <div class="offcanvas-header pb-0">
+          <a href="/" class="header__logo">
+            <img src="./assets/img/logo-header.svg" alt="" />
+          </a>
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body navbar-light">
+          <ul class="navbar-nav mb-3">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Main page</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">STORE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Examples/ INDUSTRIES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Help from AI</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">PR Agency</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTACT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">FAQ</a>
+            </li>
+          </ul>
+          <a href="#" class="btn btn-sign-up">
+            Sign up
+          </a>
+        </div>
+      </div>
+      <!-- END header -->
+
+      <main class="main main-page-store">
+        <img src="./assets/img/ellipse-576.png" alt="" class="main-page-store__ellipse">
+        <div class="container">
+          <div class="store-page-title-search">
+            <div class="store-page-title-search__content">
+              <h1 class="store-page-title-search__title">Media Store</h1>
+              <div class="store-page-title-search__search">
+                <input
+                  type="text"
+                  placeholder="Search"
+                  class="store-page-title-search__search_input"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="store-catalog">
+            <div class="row">
+              <div class="col-12 col-lg-3 col-xxl-4">
+                <button
+                  class="btn store-catalog__btn-filters d-lg-none"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasFilters"
+                  aria-controls="offcanvasFilters"
+                >
+                  <img src="./assets/img/icons/funnel.svg" alt="" />
+                  <span>
+                    Filters
+                  </span>
+                </button>
+
+
+                <div class="store-applied-filters">
+                  <p class="store-applied-filters__text">
+                    Applied filters:
+                  </p>
+                  <div class="store-applied-filters__selected-wrap">
+                    <div class="store-applied-filters__selected">
+                      <span>
+                        Selected Filter
+                      </span>
+                      <button class="btn store-applied-filters__close">
+                        <img src="./assets/img/icons/close-btn.svg" alt="" />
+                      </button>
+                    </div>
+                    <div class="store-applied-filters__selected">
+                      <span>
+                        Selected Filter
+                      </span>
+                      <button class="btn store-applied-filters__close">
+                        <img src="./assets/img/icons/close-btn.svg" alt="" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-9 col-xxl-8">
+                <div class="store-recommended">
+                  <div class="store-recommended__list">
+                    <button class="btn store-recommended__item">
+                      Recommended
+                    </button>
+                    <button class="btn store-recommended__item active">
+                      New
+                    </button>
+                    <button class="btn store-recommended__item">
+                      Price
+                    </button>
+                    <button class="btn store-recommended__item">
+                      Audience
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="d-none d-lg-block col-lg-3">
+                <form class="store-catalog-form">
+                  <div class="store-catalog-form__filters-wrap">
+                    <div class="store-catalog-form__select-wrap">
+                      <select>
+                        <option data-display="Country">Nothing</option>
+                        <option value="1">Somalia</option>
+                        <option value="2">South Africa</option>
+                        <option value="3">South Sudan</option>
+                        <option value="4">Spain</option>
+                        <option value="5">Spain</option>
+                      </select>
+                    </div>
+                    <div class="store-catalog-form__select-wrap">
+                      <select>
+                        <option data-display="Language">Nothing</option>
+                        <option value="1">English</option>
+                        <option value="2">Japanese</option>
+                        <option value="3">Korean</option>
+                        <option value="5">Spanish</option>
+                      </select>
+                    </div>
+                    <div class="store-catalog-form__select-wrap">
+                      <select>
+                        <option data-display="Category / Genres"
+                          >Nothing</option
+                        >
+                        <option value="1">English</option>
+                        <option value="2">Japanese</option>
+                        <option value="3">Korean</option>
+                        <option value="5">Spanish</option>
+                      </select>
+                    </div>
+
+                    <div class="store-catalog-form__range-price">
+                      <p class="store-catalog-form__range-price_title">
+                        Price
+                      </p>
+                      <div class="price-range-slider">
+                        <div class="price-range-progress"></div>
+                      </div>
+                      <div class="range-input">
+                        <input
+                          type="range"
+                          class="range-min"
+                          min="0"
+                          max="10000"
+                          value="2500"
+                          step="100"
+                        />
+                        <input
+                          type="range"
+                          class="range-max"
+                          min="0"
+                          max="10000"
+                          value="7500"
+                          step="100"
+                        />
+                      </div>
+                      <div class="price-input">
+                        <div class="price-input__field">
+                          <span class="price-input__span">Min</span>
+                          <input
+                            type="number"
+                            class="price-input__input price-input__input-min"
+                            value="2500"
+                          />
+                        </div>
+                        <div class="separator">-</div>
+                        <div class="price-input__field">
+                          <span class="price-input__span">Max</span>
+                          <input
+                            type="number"
+                            class="price-input__input price-input__input-max"
+                            value="7500"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="store-catalog-form__select-wrap">
+                      <select>
+                        <option data-display="Engagement">Nothing</option>
+                        <option value="1">English</option>
+                        <option value="2">Japanese</option>
+                        <option value="3">Korean</option>
+                        <option value="5">Spanish</option>
+                      </select>
+                    </div>
+                    <div class="store-catalog-form__select-wrap">
+                      <select>
+                        <option data-display="Sponsored">Nothing</option>
+                        <option value="1">English</option>
+                        <option value="2">Japanese</option>
+                        <option value="3">Korean</option>
+                        <option value="5">Spanish</option>
+                      </select>
+                    </div>
+                    <div class="store-catalog-form__select-wrap">
+                      <select>
+                        <option data-display="Do follow">Nothing</option>
+                        <option value="1">English</option>
+                        <option value="2">Japanese</option>
+                        <option value="3">Korean</option>
+                        <option value="5">Spanish</option>
+                      </select>
+                    </div>
+                    <div class="store-catalog-form__select-wrap">
+                      <select>
+                        <option data-display="Image">Nothing</option>
+                        <option value="1">English</option>
+                        <option value="2">Japanese</option>
+                        <option value="3">Korean</option>
+                        <option value="5">Spanish</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="store-catalog-form__filters-btn">
+                    <button class="btn store-catalog-form__filters-btn_apply">
+                      Apply
+                    </button>
+                    <button class="btn store-catalog-form__filters-btn_reset">
+                      Reset
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <div class="col-12 col-lg-9 col-xxl-8 offset-xxl-1">
+                <div class="store-catalog">
+                  <div class="row gx-xxl-5 gy-5 store-catalog__row">
+                    <div class="col-12 col-sm-6 col-md-4">
+                      <div class="store-catalog__card">
+                        <div class="store-catalog__card_header">
+                          <div class="store-catalog__card_image-wrap">
+                            <img
+                              src="./assets/img/store/forbes-logo.png"
+                              class="store-catalog__card_image"
+                              alt="forbes"
+                            />
+                          </div>
+                        </div>
+                        <div class="store-catalog__card_body">
+                          <h3 class="store-catalog__card_title">
+                            Forbes
+                          </h3>
+                          <a href="#" class="store-catalog__card_link">
+                            www.forbes.pl
+                          </a>
+                          <div class="store-catalog__card_info-item">
+                            <p class="store-catalog__card_plain-text">
+                              Country
+                            </p>
+                            <p class="store-catalog__card_bold-text">
+                              <span>
+                                USA
+                              </span>
+                              <img
+                                src="./assets/img/icons/flag-usa.png"
+                                width="20px"
+                                class="store-catalog__card_flag-country"
+                                alt=""
+                              />
+                            </p>
+                          </div>
+                          <div class="store-catalog__card_info-item">
+                            <p class="store-catalog__card_plain-text">
+                              Engagement:
+                            </p>
+                            <p class="store-catalog__card_bold-text">
+                              70 mln
+                            </p>
+                          </div>
+                          <div class="store-catalog__card_info-item">
+                            <p class="store-catalog__card_plain-text">
+                              Category:
+                            </p>
+                            <p class="store-catalog__card_bold-text">
+                              Business
+                            </p>
+                          </div>
+                        </div>
+
+                        <div class="store-catalog__card_footer">
+                          <a
+                            href="#"
+                            class="btn store-catalog__card_btn-publication"
+                          >
+                            <img
+                              src="./assets/img/icons/approved-report.svg"
+                              class="d-block"
+                              alt=""
+                            />
+                            <div>
+                              Publication from
+                              <span
+                                class="store-catalog__card_btn-publication-price"
+                              >
+                                $2 500
+                              </span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                      <div class="store-catalog__card">
+                        <div class="store-catalog__card_header">
+                          <div class="store-catalog__card_image-wrap">
+                            <img
+                              src="./assets/img/store/forbes-logo.png"
+                              class="store-catalog__card_image"
+                              alt="forbes"
+                            />
+                          </div>
+                        </div>
+                        <div class="store-catalog__card_body">
+                          <h3 class="store-catalog__card_title">
+                            Forbes
+                          </h3>
+                          <a href="#" class="store-catalog__card_link">
+                            www.forbes.pl
+                          </a>
+                          <div class="store-catalog__card_info-item">
+                            <p class="store-catalog__card_plain-text">
+                              Country
+                            </p>
+                            <p class="store-catalog__card_bold-text">
+                              <span>
+                                USA
+                              </span>
+                              <img
+                                src="./assets/img/icons/flag-usa.png"
+                                width="20px"
+                                class="store-catalog__card_flag-country"
+                                alt=""
+                              />
+                            </p>
+                          </div>
+                          <div class="store-catalog__card_info-item">
+                            <p class="store-catalog__card_plain-text">
+                              Engagement:
+                            </p>
+                            <p class="store-catalog__card_bold-text">
+                              70 mln
+                            </p>
+                          </div>
+                          <div class="store-catalog__card_info-item">
+                            <p class="store-catalog__card_plain-text">
+                              Category:
+                            </p>
+                            <p class="store-catalog__card_bold-text">
+                              Business
+                            </p>
+                          </div>
+                        </div>
+
+                        <div class="store-catalog__card_footer">
+                          <a
+                            href="#"
+                            class="btn store-catalog__card_btn-publication"
+                          >
+                            <img
+                              src="./assets/img/icons/approved-report.svg"
+                              class="d-block"
+                              alt=""
+                            />
+                            <div>
+                              Publication from
+                              <span
+                                class="store-catalog__card_btn-publication-price"
+                              >
+                                $2 500
+                              </span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                      <div class="store-catalog__card">
+                        <div class="store-catalog__card_header">
+                          <div class="store-catalog__card_image-wrap">
+                            <img
+                              src="./assets/img/store/forbes-logo.png"
+                              class="store-catalog__card_image"
+                              alt="forbes"
+                            />
+                          </div>
+                        </div>
+                        <div class="store-catalog__card_body">
+                          <h3 class="store-catalog__card_title">
+                            Forbes
+                          </h3>
+                          <a href="#" class="store-catalog__card_link">
+                            www.forbes.pl
+                          </a>
+                          <div class="store-catalog__card_info-item">
+                            <p class="store-catalog__card_plain-text">
+                              Country
+                            </p>
+                            <p class="store-catalog__card_bold-text">
+                              <span>
+                                USA
+                              </span>
+                              <img
+                                src="./assets/img/icons/flag-usa.png"
+                                width="20px"
+                                class="store-catalog__card_flag-country"
+                                alt=""
+                              />
+                            </p>
+                          </div>
+                          <div class="store-catalog__card_info-item">
+                            <p class="store-catalog__card_plain-text">
+                              Engagement:
+                            </p>
+                            <p class="store-catalog__card_bold-text">
+                              70 mln
+                            </p>
+                          </div>
+                          <div class="store-catalog__card_info-item">
+                            <p class="store-catalog__card_plain-text">
+                              Category:
+                            </p>
+                            <p class="store-catalog__card_bold-text">
+                              Business
+                            </p>
+                          </div>
+                        </div>
+
+                        <div class="store-catalog__card_footer">
+                          <a
+                            href="#"
+                            class="btn store-catalog__card_btn-publication"
+                          >
+                            <img
+                              src="./assets/img/icons/approved-report.svg"
+                              class="d-block"
+                              alt=""
+                            />
+                            <div>
+                              Publication from
+                              <span
+                                class="store-catalog__card_btn-publication-price"
+                              >
+                                $2 500
+                              </span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="store-catalog__footer">
+              <div class="store-catalog__pagination">
+                <div class="store-catalog__pagination_text">
+                  Page:
+                </div>
+                <nav>
+                  <ul class="pagination">
+                    <li class="page-item active" aria-current="page">
+                      <span class="page-link">1</span>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">4</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">5</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+
+              <div class="store-catalog__btn-show">
+                <button class="btn btn-primary" id="store-products-btn-show">
+                  <span>
+                    Show more
+                  </span>
+                  <img src="./assets/img/icons/arrow-white-right.svg" alt="" />
+                </button>
+              </div>
+
+              <div class="store-catalog__quantity-products">
+                <div class="store-catalog__quantity-products_number">
+                  120
+                </div>
+                <div class="store-catalog__quantity-products_text">
+                  Products
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end container -->
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-content__logo">
+              <img
+                src="./assets/img/logo-footer.svg"
+                class="footer-content__logo_image"
+                alt=""
+              />
+            </div>
+            <div class="footer-content__links">
+              <a href="#" class="footer-content__links_link">
+                Main page
+              </a>
+              <a href="#" class="footer-content__links_link">
+                Store
+              </a>
+              <a href="#" class="footer-content__links_link">
+                Services
+              </a>
+              <a href="#" class="footer-content__links_link">
+                Who we are
+              </a>
+              <a href="#" class="footer-content__links_link">
+                Industries
+              </a>
+              <a href="#" class="footer-content__links_link">
+                Contact
+              </a>
+              <a href="#" class="footer-content__links_link">
+                FAQ
+              </a>
+            </div>
+            <div class="footer-content__action">
+              <a href="#" class="footer-content__action_login">
+                Login
+              </a>
+              <a
+                href="#"
+                class="btn btn-sign-up footer-content__action_sign-up"
+              >
+                Sign up
+              </a>
+            </div>
+          </div>
+          <div class="footer__copy">
+            <div class="footer__copy_year">
+              © 2023
+            </div>
+            <div class="footer__copy_links">
+              <a href="#" class="footer__copy_link">
+                Terms & Conditions
+              </a>
+              <span>|</span>
+              <a href="#" class="footer__copy_link">
+                Privacy Policy
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div
+      class="offcanvas offcanvas-start d-lg-none"
+      tabindex="-1"
+      id="offcanvasFilters"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title fw-bold fs-4" id="offcanvasExampleLabel">Filters</h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <form class="store-catalog-form">
+          <div class="store-catalog-form__filters-wrap">
+            <div class="store-catalog-form__select-wrap">
+              <select>
+                <option data-display="Country">Nothing</option>
+                <option value="1">Somalia</option>
+                <option value="2">South Africa</option>
+                <option value="3">South Sudan</option>
+                <option value="4">Spain</option>
+                <option value="5">Spain</option>
+              </select>
+            </div>
+            <div class="store-catalog-form__select-wrap">
+              <select>
+                <option data-display="Language">Nothing</option>
+                <option value="1">English</option>
+                <option value="2">Japanese</option>
+                <option value="3">Korean</option>
+                <option value="5">Spanish</option>
+              </select>
+            </div>
+            <div class="store-catalog-form__select-wrap">
+              <select>
+                <option data-display="Category / Genres"
+                  >Nothing</option
+                >
+                <option value="1">English</option>
+                <option value="2">Japanese</option>
+                <option value="3">Korean</option>
+                <option value="5">Spanish</option>
+              </select>
+            </div>
+
+            <div class="store-catalog-form__range-price">
+              <p class="store-catalog-form__range-price_title">
+                Price
+              </p>
+              <div class="price-range-slider">
+                <div class="price-range-progress"></div>
+              </div>
+              <div class="range-input">
+                <input
+                  type="range"
+                  class="range-min"
+                  min="0"
+                  max="10000"
+                  value="2500"
+                  step="100"
+                />
+                <input
+                  type="range"
+                  class="range-max"
+                  min="0"
+                  max="10000"
+                  value="7500"
+                  step="100"
+                />
+              </div>
+              <div class="price-input">
+                <div class="price-input__field">
+                  <span class="price-input__span">Min</span>
+                  <input
+                    type="number"
+                    class="price-input__input price-input__input-min"
+                    value="2500"
+                  />
+                </div>
+                <div class="separator">-</div>
+                <div class="price-input__field">
+                  <span class="price-input__span">Max</span>
+                  <input
+                    type="number"
+                    class="price-input__input price-input__input-max"
+                    value="7500"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="store-catalog-form__select-wrap">
+              <select>
+                <option data-display="Engagement">Nothing</option>
+                <option value="1">English</option>
+                <option value="2">Japanese</option>
+                <option value="3">Korean</option>
+                <option value="5">Spanish</option>
+              </select>
+            </div>
+            <div class="store-catalog-form__select-wrap">
+              <select>
+                <option data-display="Sponsored">Nothing</option>
+                <option value="1">English</option>
+                <option value="2">Japanese</option>
+                <option value="3">Korean</option>
+                <option value="5">Spanish</option>
+              </select>
+            </div>
+            <div class="store-catalog-form__select-wrap">
+              <select>
+                <option data-display="Do follow">Nothing</option>
+                <option value="1">English</option>
+                <option value="2">Japanese</option>
+                <option value="3">Korean</option>
+                <option value="5">Spanish</option>
+              </select>
+            </div>
+            <div class="store-catalog-form__select-wrap">
+              <select>
+                <option data-display="Image">Nothing</option>
+                <option value="1">English</option>
+                <option value="2">Japanese</option>
+                <option value="3">Korean</option>
+                <option value="5">Spanish</option>
+              </select>
+            </div>
+          </div>
+          <div class="store-catalog-form__filters-btn">
+            <button class="btn store-catalog-form__filters-btn_apply">
+              Apply
+            </button>
+            <button class="btn store-catalog-form__filters-btn_reset">
+              Reset
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    </div>
+    <!-- end wrapper-all -->
+
+    <script
+      src="https://code.jquery.com/jquery-2.2.0.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="./assets/slick/slick.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <script src="./assets/custom-select/js/jquery.nice-select.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
